@@ -1,0 +1,50 @@
+{% extends 'AdminLTE/base.html' %}
+{% load static %}
+{% block head %}
+    <script src="{% static 'background/pop-massage.js'%}"></script>
+
+{% endblock %}
+{% block content %}
+    <div class="card card-info card-outline">
+        <div class="card-header">
+            <button class="btn btn-primary float-right btn-sm btn-addcategory">添加分类</button>
+            <div class="card-body">
+                <table class="table table-bordered-bottom">
+                    <thead>
+                        <tr>
+                            <th>分类名</th>
+                            <th>新闻数量</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>docker</td>
+                            <td>20</td>
+                            <td>
+                                <button class="btn btn-warning btn-xs">编辑</button>
+                                <button class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>django</td>
+                            <td>11</td>
+                            <td>
+                                <button class="btn btn-warning btn-xs">编辑</button>
+                                <button class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>linux</td>
+                            <td>33</td>
+                            <td>
+                                <button class="btn btn-warning btn-xs">编辑</button>
+                                <button class="btn btn-danger btn-xs">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
